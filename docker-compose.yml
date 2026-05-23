@@ -1,0 +1,21 @@
+services:
+  # Backend FastAPI
+  backend:
+    build: ./backend-espacesis
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend-espacesis:/app
+    environment:
+      - ENV=development
+
+  # Frontend React
+  frontend:
+    build: .
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    volumes:
+      - .:/app
+      - /app/node_modules
