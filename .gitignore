@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# --- Ajouts pour le Backend ---
+backend-espacesis/venv/
+backend-espacesis/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
