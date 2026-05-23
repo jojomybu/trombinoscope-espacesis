@@ -1,0 +1,1 @@
+//Ce fichier contiendra les clés de configuration de Firebase Auth pour sécuriser la connexion des administrateurs du club.  
