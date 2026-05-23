@@ -2,7 +2,7 @@
 
 Ce projet consiste à développer une application web moderne et réactive pour célébrer l'anniversaire du club **ESPACESIS** de l'**Université Don Bosco de Lubumbashi**. L'objectif principal est de recenser, présenter et mettre en valeur les membres du club et de l'université à travers une interface fluide, rapide et sécurisée.
 
----
+
 
 ## 🎯 Objectifs du Projet
 
@@ -18,7 +18,7 @@ Ce projet consiste à développer une application web moderne et réactive pour 
 
 *Note : Les fonctionnalités de messagerie instantanée ou de gestion des cotisations/caisses sont strictement exclues du périmètre de ce projet.*
 
----
+
 
 ## 🛠️ Stack Technique
 
@@ -29,21 +29,26 @@ L'application s'appuie sur une architecture découplée:
 * Base de données & Auth :** Écosystème Firebase (Firestore pour les données, Auth pour la sécurité, Storage pour les images).
 * Environnement :** Docker pour garantir un environnement de développement strictement identique pour toute l'équipe.
 
----
+
 
 ## 📁 Architecture du Code (Dossier Frontend)
 
-Voici la structure actuelle du dossier `src/` après sa migration en JavaScript standard :
+Voici la structure actuelle du projet :
 
 ```text
-src/
-├── components/
-│   ├── PublicView.jsx     # Grille principale d'affichage du Trombinoscope (Vue publique)
-│   ├── Modal.jsx          # Fenêtre surgissante pour afficher les détails d'un membre
-│   └── AdminView.jsx      # Tableau de bord et formulaires de gestion (Vue admin)
-├── services/
-│   ├── api.js             # Fonctions de communication avec l'API Python
-│   └── firebase.js        # Configuration de l'authentification Firebase Auth
-├── App.jsx                # Composant racine (Gestion de la navigation et de l'état global)
-├── main.jsx               # Point d'entrée de l'application React
-└── index.css              # Styles globaux de l'application (Design premium gris & blanc)
+trombinoscope-espacesis/
+├── backend-espacesis/          # API Backend (Python FastAPI)
+│   ├── venv/                   # Environnement virtuel (ignoré par Git)
+│   ├── main.py                 # Point d'entrée de l'API
+│   ├── README.md               # Documentation spécifique Backend
+│   └── Dockerfile              # Instructions pour le conteneur Python
+├── src/                        # Frontend (React + ViteJS)
+│   ├── components/             # Composants UI (PublicView, AdminView, Modal)
+│   ├── services/               # Services (api.js, firebase.js)
+│   ├── App.jsx                 # Composant racine
+│   ├── main.jsx                # Point d'entrée React
+│   ├── README.md               # Documentation spécifique Frontend
+│   └── Dockerfile              # Instructions pour le conteneur Node.js
+├── .gitignore                  # Protection du dépôt (venv, node_modules, etc.)
+├── docker-compose.yml          # Orchestration Docker (Le cœur de l'uniformisation)
+└── README.md                   # Documentation globale du projet
