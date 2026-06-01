@@ -4,7 +4,7 @@ Ce projet consiste à développer une application web moderne et réactive pour 
 
 
 
-## 🎯 Objectifs du Projet
+##  Objectifs du Projet
 
 ### Priorités Hautes (P1)
 * Interface Ultra-Rapide :** Visualisation fluide des profils des membres.
@@ -20,7 +20,7 @@ Ce projet consiste à développer une application web moderne et réactive pour 
 
 
 
-## 🛠️ Stack Technique
+##  Stack Technique
 
 L'application s'appuie sur une architecture découplée:
 
@@ -31,7 +31,7 @@ L'application s'appuie sur une architecture découplée:
 
 
 
-## 📁 Architecture du Code (Dossier Frontend)
+##  Architecture du Code (Dossier Frontend)
 
 Voici la structure actuelle du projet :
 
